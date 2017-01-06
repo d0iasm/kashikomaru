@@ -16,38 +16,43 @@ if($type != "text"){
 	exit;
 }
 
+$response_format_text = [
+  "type" => "text",
+  "text" => $text + "でございます"
+];
+
 //返信データ作成
-if ($text == 'はい') {
-  $response_format_text = [
-    "type" => "text",
-    "text" => $text + "でございます"
-  ];
-} else if ($text == 'いいえ') {
-  exit;
-} else if ($text == 'やめる') {
-  exit;
-} else {
-  $response_format_text = [
-    "type" => "template",
-    "altText" => "丁寧に言い直しますか？（はい／いいえ）",
-    "template" => [
-      "type" => "confirm",
-      "text" => "丁寧に言い直しますか？",
-      "actions" => [
-          [
-            "type" => "message",
-            "label" => "はい",
-            "text" => "はい"
-          ],
-          [
-            "type" => "message",
-            "label" => "いいえ",
-            "text" => "いいえ"
-          ]
-      ]
-    ]
-  ];
-}
+// if ($text == 'はい') {
+//   $response_format_text = [
+//     "type" => "text",
+//     "text" => $text + "でございます"
+//   ];
+// } else if ($text == 'いいえ') {
+//   exit;
+// } else if ($text == 'やめる') {
+//   exit;
+// } else {
+//   $response_format_text = [
+//     "type" => "template",
+//     "altText" => "丁寧に言い直しますか？（はい／いいえ）",
+//     "template" => [
+//       "type" => "confirm",
+//       "text" => "丁寧に言い直しますか？",
+//       "actions" => [
+//           [
+//             "type" => "message",
+//             "label" => "はい",
+//             "text" => "はい"
+//           ],
+//           [
+//             "type" => "message",
+//             "label" => "いいえ",
+//             "text" => "いいえ"
+//           ]
+//       ]
+//     ]
+//   ];
+// }
 
 $post_data = [
 	"replyToken" => $replyToken,
