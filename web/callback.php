@@ -6,8 +6,7 @@ $json_string = file_get_contents('php://input');
 $jsonObj = json_decode($json_string);
 
 $type = $jsonObj->{"events"}[0]->{"message"}->{"type"};
-//メッセージ取得
-$text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
+
 //ReplyToken取得
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
@@ -15,6 +14,10 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 if($type != "text"){
 	exit;
 }
+
+//メッセージ取得
+// $text = "アイウエオ";
+$text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 
 $response_format_text = [
   "type" => "text",
