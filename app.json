@@ -1,12 +1,12 @@
 {
-    "name": "#LINE Messaging API test PHP",
-    "description": "heroku 上にデプロイされる LINE Messaging APIのサーバースクリプト",
+    "name": "kashikomaru LINE Messaging API",
+    "description": "言葉を全て丁寧に変換して返すLINEbot",
     "repository": "https://github.com/hrmz/line-messagingapi-test.git",
     "logo": "https://bita.jp/dml/wp-content/uploads/2016/04/dijimalab_logo.png",
     "keywords": ["php", "line-messaging-api"],
     "env": {
       "LINE_CHANNEL_ACCESS_TOKEN": {
-        "description": "Channel Access Token (LINE developers の Basic information で確認できます)"
+        "description": "7SQvWpKC4csLM4g99eSLtcgztdbgJKG+Wd2l7UYvnI/f6bG+pJFmZyg+j7OOe1Zf+xWGvx9O3qgJZltI8oksUgVX6rAFbq5TqZvHQ18htHGwDwhAszAhBDj72SA7n4XTGrp5m2xhYspEHq8fUp2zgwdB04t89/1O/w1cDnyilFU="
       }
     }
 }
