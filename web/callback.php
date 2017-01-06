@@ -17,7 +17,7 @@ if($type != "text"){
 
 //メッセージ取得
 // $text = "アイウエオ";
-$text = $jsonObj->{"events"}[0]->{"message"}->{"text"};
+$text = $jsonObj->{"events"}->{"message"}->{"text"};
 
 $response_format_text = [
   "type" => "text",

@@ -1,7 +1,7 @@
 {
     "name": "kashikomaru LINE Messaging API",
     "description": "言葉を全て丁寧に変換して返すLINEbot",
-    "repository": "https://github.com/hrmz/line-messagingapi-test.git",
+    "repository": "https://github.com/d0iasm/kashikomaru.git",
     "logo": "https://bita.jp/dml/wp-content/uploads/2016/04/dijimalab_logo.png",
     "keywords": ["php", "line-messaging-api"],
     "env": {
